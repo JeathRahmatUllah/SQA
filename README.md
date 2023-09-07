@@ -1,60 +1,77 @@
 # SQA
 This project involved comprehensive testing of OrangeHRM, a human resource management system, encompassing functionality, integration, and performance tests to ensure smooth operations and accurate data management.
 
+
 # OrangeHRM Testing Project
 
-This project focuses on testing various aspects of the OrangeHRM human resource management system, including functionality, integration, and performance tests. The tests are designed to ensure that the system operates seamlessly, maintains data accuracy, and performs efficiently under different scenarios.
+This project is a comprehensive testing effort for OrangeHRM, a human resource management system. It includes functional tests, integration tests, and performance tests to ensure the system's reliability and functionality.
 
 ## Table of Contents
 
-- [Description](#description)
-- [Test Scenarios](#test-scenarios)
-- [Test Execution](#test-execution)
-- [Challenges](#challenges)
-- [Outcome](#outcome)
-- [Getting Started](#getting-started)
-- [Contributions](#contributions)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Test Descriptions](#test-descriptions)
+- [Test Code](#test-code)
+- [Contributing](#contributing)
 - [License](#license)
 
-## Description
+## Prerequisites
 
-OrangeHRM Testing Project involves the creation and execution of test scenarios covering login functionality, user management, report generation, data export, UI layout, integration with external systems, and performance under load. The project aims to identify any issues, validate the system's behavior, and ensure a high level of quality.
+Before running the tests, ensure you have the following prerequisites installed:
 
-## Test Scenarios
+- **Node.js:** Ensure you have Node.js installed on your system. You can download it from [nodejs.org](https://nodejs.org/).
 
-The project covers the following test scenarios:
+- **Protractor:** Protractor is used for end-to-end testing. Install it globally via npm:
 
-- Login Test
-- Delete User Test
-- Update User Test
-- Generate Report Test
-- Export Data Test
-- UI Layout Test
-- Integration Test
-- Performance Test
 
-## Test Execution
 
-Each test scenario is executed using appropriate testing tools and frameworks. Cypress and Jasmine are used for test automation, ensuring consistent and reliable results. Test scripts are provided for each scenario to facilitate easy execution and verification.
+- **WebDriver:** You'll need a WebDriver compatible with your browser (e.g., ChromeDriver, GeckoDriver for Firefox). Download and install the appropriate WebDriver and add its path to your system's PATH variable.
 
-## Challenges
+## Installation
 
-The testing process encountered challenges such as handling dynamic content, ensuring synchronization, and managing concurrent user interactions. Performance testing also required simulating realistic load scenarios while maintaining stability.
+1. Clone this repository to your local machine:
+2. Navigate to the project directory:
+3. Install project dependencies:
 
-## Outcome
+## Usage
 
-The tests were executed successfully, validating the system's core functionalities, data accuracy, and integrations. Minor issues, including slow response times, were identified. The project confirms the robustness and reliability of OrangeHRM under various testing scenarios.
+To run the tests, use the following command:
 
-## Getting Started
 
-To execute the tests, follow these steps:
+This will execute all the defined test suites.
 
-1. Clone this repository.
-2. Install required dependencies (Cypress, Jasmine, etc.).
-3. Navigate to the respective test folders.
-4. Run the test scripts using the provided instructions.
+## Test Descriptions
 
-## Contributions
+- **Login Test**: Validates login functionality with valid and invalid credentials.
+- **Delete User Test**: Tests user deletion functionality.
+- **Update User Test**: Tests user profile update functionality.
+- **Generate Report Test**: Verifies report generation functionality.
+- **Export Data Test**: Tests data export functionality.
+- **UI Test**: Validates the layout of the OrangeHRM home page.
+- **Integration Test**: Verifies integration with an external system.
+- **Performance Test**: Tests system performance under concurrent user load.
 
-Contributions to this testing project are welcome. If you encounter issues or have suggestions for improvement, please feel free to open an issue or submit a pull request.
+## Test Code
+
+You can find the test code in the following files:
+
+- `login.spec.js`
+- `delete-user.spec.js`
+- `update-user.spec.js`
+- `generate-report.spec.js`
+- `export-data.spec.js`
+- `ui-test.spec.js`
+- `integration-test.spec.js`
+- `performance-test.spec.js`
+
+Each test file contains detailed test scenarios and steps.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or find issues, please open a GitHub issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 
